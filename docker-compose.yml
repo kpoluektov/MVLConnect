@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  mvlconnect:
+    image: ${IMAGE_NAME}:${IMAGE_TAG}
+    build:
+      context: .
+    ports:
+      - '8083:8083'
+    environment:
+      - KAFKA_LISTENERS=PLAINTEXT:kafka:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT:kafka:9092
+    networks:
+      - all_in_one_kafka-network
+networks:
+  all_in_one_kafka-network:
+    external: true

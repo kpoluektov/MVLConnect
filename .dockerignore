@@ -1,0 +1,15 @@
+/target/scala-2.12/classes
+/target/scala-2.12/resolution-cache
+/target/scala-2.12/test-classes
+/target/streams
+/target/test-repost
+/.git/
+/.idea/
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
