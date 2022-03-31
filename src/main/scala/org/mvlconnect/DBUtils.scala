@@ -45,5 +45,5 @@ trait DBUtils extends OracleSQL with Constants{
 object DBUtils{
   // everything to be rewritten on connector init
   var db : Option[Database] = Some(null)
-  var dbTimeout = 100
+  var dbTimeout = 10 // Constant timeout for DB response
 }
